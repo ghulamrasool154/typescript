@@ -32,8 +32,8 @@ const ArrayOfObject = () => {
   return (
     <div>
       <h2> ArrayOfObject</h2>
-      {people.map((el) => {
-        return <h4>{el.name}</h4>;
+      {people.map((el, index) => {
+        return <h4 key={index}>{el.name}</h4>;
       })}
     </div>
   );
